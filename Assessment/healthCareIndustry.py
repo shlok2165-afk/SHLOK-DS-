@@ -30,7 +30,7 @@ class ClinicAppointment:
                 "doctor": doctor,
                 "slot": slot
             }
-            print("✅ Appointment booked successfully.")
+            print("Appointment booked successfully.")
 
     def view_appointment(self):
         mobile = input("Enter mobile number: ")
@@ -41,18 +41,18 @@ class ClinicAppointment:
             print("Doctor:", data["doctor"])
             print("Time Slot:", data["slot"])
         else:
-            print("❌ No appointment found.")
+            print("No appointment found.")
 
     def cancel_appointment(self):
         mobile = input("Enter mobile number: ")
         if mobile in self.appointments:
             del self.appointments[mobile]
-            print("✅ Appointment cancelled.")
+            print("Appointment cancelled.")
         else:
-            print("❌ No appointment found.")
+            print("No appointment found.")
 
 
-# -------- MENU --------
+
 clinic = ClinicAppointment()
 
 while True:
