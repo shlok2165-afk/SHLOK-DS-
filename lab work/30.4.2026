@@ -1,0 +1,23 @@
+ OOPS (object orianted Programming Language )
+
+ class Myclass:
+
+        def fun1(self,a,b):
+            print(a,b)  Method
+            print("Method 1 !!")
+
+
+        def fun2(self):
+            print("Method 2 !!")
+
+    
+obj = Myclass()
+obj.fun1(10,20)
+obj.fun2()
+
+
+
+class Myclass1:
+
+
+
